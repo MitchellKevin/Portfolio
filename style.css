@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: #00ff94;
+    font-size: 6em;
+}
+
+h2{
+    color: #a9ffdb;
+    font-size: 2.5em;
+}
+
+h1:first-of-type{
+    position: absolute;
+    left: .5em;
+    font-size: 20em;
+}
+
+h2:first-of-type{
+    position: absolute;
+    left: 2.5em;
+    top: 8em;
+    font-size: 4em;
+}
+
+img:first-of-type{
+    position: absolute;
+    top: 5em;
+    right: 0;
+    width: 50em;
+    height: 50em;
+    z-index: 1;
+}
+
+img:nth-of-type(2){
+    position: absolute;
+    right: 0;
+    top: 0;
+}
