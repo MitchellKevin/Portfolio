@@ -2,6 +2,36 @@ body{
     background-color: black;
 }
 
+/* Navigation */
+.navbar {
+    font-size: 1.5em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+  }
+  
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar nav ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar nav ul li a {
+    text-decoration: none;
+    color: #a9ffdb;
+    font-weight: bold;
+  }
+  
+  .navbar nav ul li a:hover {
+    color: #4D4D4D;
+  }
+
 h1{
     color: #00ff94;
     font-size: 6em;
@@ -20,15 +50,28 @@ h1:first-of-type{
 
 h2:first-of-type{
     position: absolute;
-    left: 2.5em;
-    top: 8em;
-    font-size: 4em;
+    left: 1.75em;
+    top: 5em;
+    font-size: 6em;
+}
+
+button{
+    position: absolute;
+    top: 7.5em;
+    left: 5em;
+    font-size: 2em;
+    border: solid #00ff94;
+    background-color: black;
+    color:#a9ffdb;
+    width: 4em;
+    height: 3em;
+    box-shadow: #a9ffdb;
 }
 
 img:first-of-type{
     position: absolute;
     top: 5em;
-    right: 0;
+    right: 5em;
     width: 50em;
     height: 50em;
     z-index: 1;
@@ -39,3 +82,4 @@ img:nth-of-type(2){
     right: 0;
     top: 0;
 }
+
