@@ -82,4 +82,43 @@ img:nth-of-type(2){
     right: 0;
     top: 0;
 }
+.t{
+  margin: 0;
+}
+.t section{
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  perspective: 100px;
+  transition: 2s;
+  animation-name: animation;
+  animation-duration: 4s;
+}
 
+.t section img{
+  position: relative;
+  width: 30vw;
+  height: 40vh;
+  perspective: 100em;
+  animation-name: animation;
+  transform: rotateX(-5deg);
+  transition: 200ms;
+  animation-duration: 5s;
+}
+
+@keyframes animation{
+  0%{
+      align-items: end;
+      transform: rotateX(5deg);
+  }
+  50%{
+      align-items: center;
+      transform: rotateX(0deg);
+  }
+  100%{
+      align-items: start;
+      transform: rotateX(-5deg);
+  }
+}
