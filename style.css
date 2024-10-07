@@ -1,3 +1,10 @@
+:root{
+  --bg: black;
+  --primair-color: #00ff94;
+  --secondaire-color: #a9ffdb;
+  --accent-color: #4D4D4D;
+}
+
 body{
     background-color: black;
 }
@@ -24,65 +31,100 @@ body{
   
   .navbar nav ul li a {
     text-decoration: none;
-    color: #a9ffdb;
+    color: var(--secondaire-color);
     font-weight: bold;
   }
   
   .navbar nav ul li a:hover {
-    color: #4D4D4D;
+    color: var(--accent-color);
   }
 
-h1{
-    color: #00ff94;
+
+  body{
+    margin: 0;
+  }
+
+  section:first-of-type{
+    height: 100vh;
+  }
+
+  h1{
+    color: var(--primair-color);
     font-size: 6em;
-}
+  }
 
-h2{
-    color: #a9ffdb;
+  h2{
+    color: var(--secondaire-color);
     font-size: 2.5em;
-}
+  }
 
-h1:first-of-type{
+  article:first-of-type h1:first-of-type{
     position: absolute;
     left: .5em;
     font-size: 20em;
-}
+    top: -.2em;
+  }
 
-h2:first-of-type{
+  article:first-of-type h2:first-of-type{
     position: absolute;
-    left: 1.75em;
-    top: 5em;
-    font-size: 6em;
-}
+    left: 2.8em;
+    top: 9em;
+    font-size: 3.5em;
+  }
 
-button{
+  button{
     position: absolute;
-    top: 7.5em;
+    top: 7em;
     left: 5em;
     font-size: 2em;
-    border: solid #00ff94;
+    border: solid var(--primair-color);
     background-color: black;
-    color:#a9ffdb;
+    color: var(--secondaire-color);
     width: 4em;
     height: 3em;
-    box-shadow: #a9ffdb;
+    box-shadow: var(--secondaire-color);
 }
 
-img:first-of-type{
+  section:first-of-type article{
+    position: relative;
+  }
+
+  article:first-of-type img{
     position: absolute;
-    top: 5em;
-    right: 5em;
-    width: 50em;
-    height: 50em;
+    top: -10em;
+    right: 2em;
+  }
+
+  article:first-of-type img:first-of-type{
     z-index: 1;
-}
+    top: 3em;
+    height: 90vh;
+  }
 
-img:nth-of-type(2){
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.t{
+  section:nth-of-type(2) h2{
+    font-size: 8em;
+    padding-left: .2em;
+  }
+
+  section:nth-of-type(2) article h3{
+    color: var(--primair-color);
+    font-size: 8em;
+    line-height: 0;
+    padding-left: .2em;
+  }
+
+  section:nth-of-type(2) article{
+    background-color: var(--bg);
+  }
+
+  section:nth-of-type(2) article:hover{
+    background-color: var(--primair-color);
+  }
+  section:nth-of-type(2) article h3:hover{
+    color: var(--secondaire-color);
+  }
+  
+  /* .t{
   margin: 0;
 }
 .t section{
@@ -96,7 +138,6 @@ img:nth-of-type(2){
   animation-name: animation;
   animation-duration: 4s;
 }
-
 .t section img{
   position: relative;
   width: 30vw;
@@ -121,4 +162,4 @@ img:nth-of-type(2){
       align-items: start;
       transform: rotateX(-5deg);
   }
-}
+} */
