@@ -7,6 +7,7 @@
 
 body{
     background-color: black;
+    overflow-x: hidden;
 }
 
 /* Navigation */
@@ -92,12 +93,13 @@ body{
   article:first-of-type img{
     position: absolute;
     top: -10em;
-    right: 2em;
+    right: -1em;
   }
 
   article:first-of-type img:first-of-type{
     z-index: 1;
     top: 3em;
+    right: 2em;
     height: 90vh;
   }
 
@@ -163,3 +165,39 @@ body{
       transform: rotateX(-5deg);
   }
 } */
+
+/* Carousel container */
+section#work {
+  overflow: hidden;
+  padding: 60px 0;
+  background-color: var(--accent-color);
+  white-space: nowrap;
+}
+
+.work-slide{
+  display: inline-block;
+  animation: 20s slide infinite linear;
+}
+
+.work-slide img{
+  height: 30em;
+  margin: 0 40px;
+}
+
+/* Keyframes for continuous scrolling */
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* Start from the initial position */
+  }
+  100% {
+    transform: translateX(-100%); /* Move the entire set of images to the left */
+  }
+}
+
+.carousel-images img:hover {
+  transform: rotateX(20deg); /* Stops rotation on hover */
+}
+
+.work-slide img:hover {
+  transform: rotateX(20deg); /* Stops rotation on hover */
+}
