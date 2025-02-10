@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #1a1a1a;
+    background-color: var(--bg);
     overflow-x: hidden;
 }
 
@@ -79,7 +79,7 @@ body{
     left: 6.4em;
     font-size: 1.5em;
     border: solid var(--primair-color);
-    background-color: #1a1a1a;
+    background-color: var(--bg);
     color: var(--secondaire-color);
     width: 6em;
     height: 4em;
@@ -229,8 +229,8 @@ section#work {
   content: "";
   position: absolute;
   left: 0;
-  background-color: #1a1a1a;
-  height: 100%;
+  background-color: var(--bg);
+  height: 105%;
   width: 100%;
   border-left: 2px solid white;
   animation: typing 2s steps(16) infinite
